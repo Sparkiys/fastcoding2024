@@ -1,14 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>webpack starterkit</title>
-  <meta name="description" content="A light foundation for your next frontend project based on webpack.">
-</head>
-<body>
-  <img src="images/webpack.png" alt="Webpack logo">
-  <h1>webpack starter</h1>
-  <p>✨ A lightweight foundation for your next webpack based frontend project.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <meta
+      name="description"
+      content="A light foundation for your next frontend project based on webpack."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="#" class="logo__link">Erica JONES</a>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a href="" class="header__link">About me</a>
+          </li>
+          <li class="header__list-item">
+            <a href="" class="header__link">Portfolio</a>
+          </li>
+          <li class="header__list-item">
+            <a href="" class="header__link">Skills</a>
+          </li>
+          <li class="header__list-item">
+            <a href="" class="header__link">Services</a>
+          </li>
+          <li class="header__list-item">
+            <a href="" class="header__link">Testimonials</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__btn">
+        <a href="#" class="btn btn-primary">get in touch</a>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <p class="hero__text">Hey, I am Erica</p>
+        <h1 class="hero__title">
+          A YOUNG CREATIVE DESIGNER BASED IN SAN DIEGO
+        </h1>
+        <div class="hero__btns">
+          <a href="" class="btn btn-secondary">My WORKS</a>
+          <a href="" class="btn btn-primary">LET’S TALK</a>
+        </div>
+      </section>
+
+      <section class="ad">
+        <ul class="ad__list">
+          <li class="ad__list-item"></li>
+          <li class="ad__list-item"></li>
+          <li class="ad__list-item"></li>
+          <li class="ad__list-item"></li>
+          <li class="ad__list-item"></li>
+          <li class="ad__list-item"></li>
+          <li class="ad__list-item"></li>
+        </ul>
+      </section>
+
+      <section class="about">
+        <div class="imgbox">
+          <img src="./images/Image.png" alt="Image-photo" class="about__img" />
+        </div>
+        <div class="about-description">
+          <p class="subtitle">ABOUT</p>
+          <h2 class="section-title">
+            Crafting UNIQUE BRAND EXPERIENCES SINCE 2014
+          </h2>
+          <p class="section-description">
+            With a Visual Arts degree, my journey began in graphic design,
+            crafting logos and marketing materials. Video editing followed,
+            where meticulous attention to detail set my work apart, and I
+            ventured into 3D modeling for immersive experiences.
+          </p>
+          <a href="#" class="btn btn-primary">SCHEDULE A CALL</a>
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <p class="subtitle">ABOUT</p>
+        <h2 class="section-title">
+          Crafting UNIQUE BRAND EXPERIENCES SINCE 2014
+        </h2>
+        <div class="portfolio__carousel">
+          <ul class="portfolio__gallery">
+            <li class="portfolio__item">
+              <img
+                src="./images/Image1.png"
+                alt="Image"
+                class="portfolio__img"
+              />
+              <div class="portfolio__item-desc">
+                <p class="item-subtitle">Branding</p>
+                <h3 class="item-title">Steaan</h3>
+                <p class="txt-small">
+                  Merging modern aesthetics with brand essence, I crafted logos
+                  and visuals that not only resonated with each startup's unique
+                  vision but also left a lasting impression.
+                </p>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <img
+                src="./images/Image1.png"
+                alt="Image"
+                class="portfolio__img"
+              />
+              <div class="portfolio__item-desc">
+                <p class="item-subtitle">Branding</p>
+                <h3 class="item-title">Steaan</h3>
+                <p class="txt-small">
+                  Merging modern aesthetics with brand essence, I crafted logos
+                  and visuals that not only resonated with each startup's unique
+                  vision but also left a lasting impression.
+                </p>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <img
+                src="./images/Image1.png"
+                alt="Image"
+                class="portfolio__img"
+              />
+              <div class="portfolio__item-desc">
+                <p class="item-subtitle">Branding</p>
+                <h3 class="item-title">Steaan</h3>
+                <p class="txt-small">
+                  Merging modern aesthetics with brand essence, I crafted logos
+                  and visuals that not only resonated with each startup's unique
+                  vision but also left a lasting impression.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <p class="subtitle">ABOUT</p>
+        <h2 class="section-title">
+          Crafting UNIQUE BRAND EXPERIENCES SINCE 2014
+        </h2>
+        <ul class="testimonial-list">
+          <li class="testimonial-list-item">
+            <div class="item-header">
+              <h3 class="item-title">TechStartup Xperience</h3>
+              <p class="item-subtitle">Thompson</p>
+            </div>
+            <p>
+              Ability to capture the essence of our vision and translate it into
+              a visually stunning logo exceeded our expectations.
+            </p>
+            <span class="date"></span>
+          </li>
+          <li class="testimonial-list-item">
+            <div class="item-header">
+              <h3 class="item-title">TechStartup Xperience</h3>
+              <p class="item-subtitle">Thompson</p>
+            </div>
+            <p>
+              Ability to capture the essence of our vision and translate it into
+              a visually stunning logo exceeded our expectations.
+            </p>
+            <span class="date"></span>
+          </li>
+          <li class="testimonial-list-item">
+            <div class="item-header">
+              <h3 class="item-title">TechStartup Xperience</h3>
+              <p class="item-subtitle">Thompson</p>
+            </div>
+            <p>
+              Ability to capture the essence of our vision and translate it into
+              a visually stunning logo exceeded our expectations.
+            </p>
+            <span class="date"></span>
+          </li>
+          <li class="testimonial-list-item">
+            <div class="item-header">
+              <h3 class="item-title">TechStartup Xperience</h3>
+              <p class="item-subtitle">Thompson</p>
+            </div>
+            <p>
+              Ability to capture the essence of our vision and translate it into
+              a visually stunning logo exceeded our expectations.
+            </p>
+            <span class="date"></span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="services">
+        <p class="subtitle">ABOUT</p>
+        <h2 class="section-title">
+          Crafting UNIQUE BRAND EXPERIENCES SINCE 2014
+        </h2>
+        <ul class="services-list">
+          <li class="services-item">
+            <div class="item-text">
+              <h3 class="services-item-title">Graphic Design</h3>
+              <p class="services-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia, reprehenderit!
+              </p>
+              <h4 class="services-item-title">Graphic Design</h4>
+              <p class="services small-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia, reprehenderit!
+              </p>
+            </div>
+            <div class="main-img">
+              <img src="./images/Image-serv.png" alt="Image-serv" />
+            </div>
+            <div class="aux-img">
+              <img src="./images/Image-serv1.png" alt="Image-serv1" />
+            </div>
+          </li>
+          <li class="services-item">
+            <div class="item-text">
+              <h3 class="services-item-title">Graphic Design</h3>
+              <p class="services-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia, reprehenderit!
+              </p>
+              <h4 class="services-item-title">Graphic Design</h4>
+              <p class="services small-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia, reprehenderit!
+              </p>
+            </div>
+            <div class="main-img">
+              <img src="./images/Image-serv2.png" alt="Image-serv2" />
+            </div>
+            <div class="aux-img">
+              <img src="./images/Image-serv3.png" alt="Image-serv3" />
+            </div>
+          </li>
+          <li class="services-item">
+            <div class="item-text">
+              <h3 class="services-item-title">Graphic Design</h3>
+              <p class="services-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia, reprehenderit!
+              </p>
+              <h4 class="services-item-title">Graphic Design</h4>
+              <p class="services small-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia, reprehenderit!
+              </p>
+            </div>
+            <div class="main-img">
+              <img src="./images/Image-serv4.png" alt="Image-serv4" />
+            </div>
+            <div class="aux-img">
+              <img src="./images/Image-serv5.png" alt="Image-serv5" />
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+  </body>
 </html>

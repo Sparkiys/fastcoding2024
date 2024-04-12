@@ -1,0 +1,39 @@
+body {
+  font-family: $font-family;
+}
+
+.btn {
+  @include btn();
+}
+
+.btn-primary {
+  @include btn($light, $dark);
+}
+
+h1 {
+  @include title(95px);
+  text-transform: uppercase;
+}
+
+h2 {
+  @include title(48px);
+  text-transform: uppercase;
+}
+
+h3 {
+  @include title(32px, 500, $text-black, italic);
+}
+
+.subtitle {
+  @include title(21px, 500, $text-gray);
+}
+
+.tagline {
+  @include title(20px, 700, $text-gray);
+  text-transform: uppercase;
+}
+
+.project-tagline {
+  @include title(14px, 500, $text-gray);
+  text-transform: uppercase;
+}
