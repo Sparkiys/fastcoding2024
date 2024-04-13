@@ -2,6 +2,7 @@
   @include flex-row;
   background-color: $dark;
   color: $light;
+  justify-content: space-between;
 
   &__nav {
   }

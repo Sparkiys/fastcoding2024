@@ -32,6 +32,7 @@ module.exports = merge(common, {
       files: Path.join("src", "**/*.s?(a|c)ss"),
     }),
   ],
+
   module: {
     rules: [
       {
