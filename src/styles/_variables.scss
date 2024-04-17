@@ -1,0 +1,31 @@
+$dark: #171717;
+$dark80: #17171780;
+$dark16: #17171716;
+$light: #fefaee;
+$color1: #9c356d;
+$color2: #fcd68b;
+$color3: #f9784c;
+$color3op: #f9784c80;
+
+$text-black: #202020;
+$text-grey: #262522;
+
+$font-family: "Montserrat", sans-serif;
+
+$gradient1: linear-gradient(
+  90deg,
+  $light 31.43%,
+  $color2 47.49%,
+  $color3 63.67%,
+  $color1 78.6%,
+  $dark 95.8%
+);
+$gradient2: linear-gradient(
+  178deg,
+  $light 31.43%,
+  $color2 47.49%,
+  $color3 63.67%,
+  $color1 78.6%,
+  $dark 95.8%
+);
+$gradient3: linear-gradient(135deg, $color2 0%, #fff 100%);

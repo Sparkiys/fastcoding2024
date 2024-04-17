@@ -1,0 +1,94 @@
+body {
+  font-family: $font-family;
+}
+
+.container {
+  width: 100%;
+  max-width: 1328px;
+  margin: 0 auto;
+}
+
+.btn {
+  @include btn();
+}
+
+.btn-primary {
+  @include btn($light, $dark);
+}
+
+h1 {
+  @include title(56px);
+  text-transform: uppercase;
+  @media (min-width: 1024px) {
+    @include title(95px);
+  }
+}
+
+h2 {
+  @include title(48px);
+  text-transform: uppercase;
+}
+
+h3 {
+  @include title(28px, 500, $text-black, italic);
+  margin-bottom: 16px;
+  @media (min-width: 1024px) {
+    @include title(32px, 500, $text-black, italic);
+  }
+}
+
+.section-title {
+  @include title(32px, 700, $dark);
+
+  @media (min-width: 1024px) {
+    @include title(48px, 500, $dark);
+  }
+}
+
+.subtitle {
+  @include title(14px, 600, $color3op);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  @media (min-width: 1024px) {
+    @include title(20px, 700, $color3op);
+  }
+}
+
+.p-lg {
+  @include p(16px, 400, $dark);
+  margin-bottom: 16px;
+  @media (min-width: 1024px) {
+    font-size: 18px;
+  }
+}
+
+.p-small {
+  @include p(14px, 400, $dark);
+  margin-bottom: 16px;
+  @media (min-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+.small-text {
+  @include p(14px, 600, $text-grey);
+}
+
+.general-subtitle {
+  @include title(21px, 500, $text-grey);
+  margin-bottom: 16px;
+}
+
+.tagline {
+  @include title(20px, 700, $text-grey);
+  text-transform: uppercase;
+}
+
+.project-tagline {
+  @include title(14px);
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+}

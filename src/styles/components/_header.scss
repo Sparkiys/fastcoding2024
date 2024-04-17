@@ -1,0 +1,21 @@
+.header {
+  @include flex-row;
+  background-color: $dark;
+  color: $light;
+  justify-content: space-between;
+
+  &__nav {
+  }
+
+  &__list {
+    &-item {
+    }
+  }
+
+  &__link {
+    color: $light;
+  }
+}
+
+.logo {
+}

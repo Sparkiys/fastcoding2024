@@ -1,0 +1,71 @@
+@mixin title($fsz, $fw: 500, $color: $text-black, $fs: normal, $lh: 1) {
+  font-family: $font-family;
+  font-weight: $fw;
+  font-size: $fsz;
+  font-style: $fs;
+  line-height: $lh;
+  letter-spacing: -0.02em;
+  color: $color;
+}
+
+@mixin p($fsz, $fw: 400, $color: $text-black, $fs: normal, $lh: 1) {
+  font-family: $font-family;
+  font-weight: $fw;
+  font-size: $fsz;
+  line-height: $lh;
+  letter-spacing: 0.02em;
+  color: $color;
+}
+
+@mixin btn($bg: $dark, $color: $light) {
+  border-radius: 40px;
+  padding: 12px 24px;
+  background: $bg;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $color;
+  border: 1px solid $color;
+  text-decoration: none;
+  transition: all 0.5s ease;
+
+  &:hover {
+    color: $bg;
+    background: $color;
+
+    border: 1px solid $bg;
+  }
+}
+
+@mixin flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-column {
+  @include flex-center;
+  flex-direction: column;
+}
+
+@mixin flex-center-vert {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-center-horiz {
+  display: flex;
+  justify-content: center;
+}

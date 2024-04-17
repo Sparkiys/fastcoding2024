@@ -1,0 +1,73 @@
+.services {
+  background-color: $light;
+  padding: 64px 15px 0;
+  @media (min-width: 1024px) {
+    padding: 96px 0;
+  }
+
+  &__list {
+    @media (min-width: 1024px) {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 636px;
+        height: 636px;
+        bottom: -253px;
+        left: -376px;
+        background-image: url("../images/ellipse4.png");
+        background-repeat: no-repeat;
+        filter: blur(100px);
+      }
+    }
+  }
+
+  &__item {
+    padding: 40px 0;
+    border-bottom: 1px solid $dark16;
+    position: relative;
+
+    @media (min-width: 1024px) {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      &:nth-child(2n) {
+        .main-img {
+          order: 2;
+        }
+
+        .aux-img {
+          order: 0;
+        }
+      }
+    }
+  }
+}
+
+.item-text {
+  @media (min-width: 1024px) {
+    order: 1;
+    max-width: 432px;
+  }
+}
+
+.main-img {
+  @media (min-width: 1024px) {
+    order: 0;
+    max-width: 432px;
+  }
+}
+
+.aux-img {
+  position: absolute;
+  bottom: 64px;
+  right: 0;
+  @media (min-width: 1024px) {
+    position: static;
+    order: 2;
+    max-width: 248px;
+  }
+}
