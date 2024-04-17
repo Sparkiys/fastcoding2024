@@ -11,6 +11,7 @@ module.exports = merge(common, {
   output: {
     filename: "js/[name].[chunkhash:8].js",
     chunkFilename: "js/[name].[chunkhash:8].chunk.js",
+    assetModuleFilename: "images/[name][ext][query]",
   },
   plugins: [
     new Webpack.DefinePlugin({
