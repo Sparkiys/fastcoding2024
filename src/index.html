@@ -68,25 +68,31 @@
       </section>
 
       <section class="about">
-        <div class="imgbox">
-          <img
-            src="./images/author.png"
-            alt="author-photo"
-            class="about__img"
-          />
-        </div>
-        <div class="about-description">
-          <p class="subtitle">ABOUT</p>
-          <h2 class="section-title">
-            Crafting UNIQUE BRAND EXPERIENCES SINCE 2014
-          </h2>
-          <p class="section-description">
-            With a Visual Arts degree, my journey began in graphic design,
-            crafting logos and marketing materials. Video editing followed,
-            where meticulous attention to detail set my work apart, and I
-            ventured into 3D modeling for immersive experiences.
-          </p>
-          <a href="#" class="btn btn-primary">SCHEDULE A CALL</a>
+        <div class="container">
+          <div class="about__container">
+            <div class="imgbox">
+              <img
+                src="./images/author.png"
+                alt="author-photo"
+                class="about__img"
+              />
+            </div>
+            <div class="about-description">
+              <p class="subtitle">ABOUT</p>
+              <h2 class="section-title">
+                Crafting UNIQUE BRAND EXPERIENCES SINCE 2014
+              </h2>
+              <p class="section-description">
+                With a Visual Arts degree, my journey began in graphic design,
+                crafting logos and marketing materials. Video editing followed,
+                where meticulous attention to detail set my work apart, and I
+                ventured into 3D modeling for immersive experiences.
+              </p>
+              <div class="about__btn">
+                <a href="#" class="btn btn-primary">SCHEDULE A CALL</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -266,10 +272,30 @@
                 </p>
               </div>
               <div class="main-img">
-                <img src="./images/video-lg.png" alt="video-lg" />
+                <picture>
+                  <source
+                    media="(min-width: 1024px)"
+                    srcset="./images/video-lg.png"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/video-tab-lg.png"
+                  />
+                  <img src="./images/video-mob-lg.png" alt="" />
+                </picture>
               </div>
               <div class="aux-img">
-                <img src="./images/video-sm.png" alt="video-sm" />
+                <picture>
+                  <source
+                    media="(min-width: 1024px)"
+                    srcset="./images/video-sm.png"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/video-tab-sm.png"
+                  />
+                  <img src="./images/video-mob-sm.png" alt="" />
+                </picture>
               </div>
             </li>
             <li class="services__item">
@@ -290,10 +316,30 @@
                 </p>
               </div>
               <div class="main-img">
-                <img src="./images/animation-lg.png" alt="animation-lg" />
+                <picture>
+                  <source
+                    media="(min-width: 1024px)"
+                    srcset="./images/animation-lg.png"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/animation-tab-lg.png"
+                  />
+                  <img src="./images/animation-mob-lg.png" alt="" />
+                </picture>
               </div>
               <div class="aux-img">
-                <img src="./images/animation-sm.png" alt="animation-sm" />
+                <picture>
+                  <source
+                    media="(min-width: 1024px)"
+                    srcset="./images/animation-sm.png"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/animation-tab-sm.png"
+                  />
+                  <img src="./images/animation-mob-sm.png" alt="" />
+                </picture>
               </div>
             </li>
           </ul>
